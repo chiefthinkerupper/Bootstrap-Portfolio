@@ -13,8 +13,8 @@ body {
 /* general */
 
 .container {
-  width: 100%;
-  max-width: 960px;
+  width: 75%;
+  max-width: 980px;
   margin: 0 auto;
   clear: both;
 }
@@ -107,7 +107,8 @@ nav a:first-child {
 
 /* footer */
 
-footer {
+.footer {
+  margin-top: 15px
   padding: 30px 0;
   clear: both;
   font-size: 12px;
@@ -138,6 +139,11 @@ h3,
   border-bottom: 2px solid #eee;
 }
 
+
+.panel {
+    margin-bottom: 80px;
+}
+
 .social {
   width: 62px;
   height: 62px;
@@ -152,13 +158,25 @@ h3,
 /* main */
 
 #main-container {
-  padding-top: 130px;
+  padding-top: 25px;
+  /* display: flex; */
+  justify-content: center;
 }
 
-.main-section {
+/* .page-header {
   float: left;
   width: 100%;
-  max-width: 650px;
+  max-width: 680px;
+  padding: 30px;
+  margin: 0 0 40px;
+  background: #fff;
+  border: 1px solid #ddd;
+} */
+
+.main-section {
+  /* float: left; */
+  /* width: 100%; */
+  /* max-width: 680px; */
   padding: 30px;
   margin: 0 0 40px;
   background: #fff;
@@ -179,8 +197,8 @@ h3,
 
 .work {
   position: relative;
-  float: left;
-  width: 274px;
+  /* float: left; */
+  width: 50%;
   margin: 20px 0 25px;
   overflow: auto;
 }
@@ -257,5 +275,85 @@ input[type=submit] {
   border: 0 none;
 }
 
+/* -------------------- Tablets -------------------- */
 
+
+@media screen and (max-width: 768px) {
+    h1 {text-align: center;}
+    .work h3 {
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    padding: 1px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+    font-size: 12px
 }
+/*  .sidebar{
+    display: block;
+    width: 100%;
+    max-width: 650px; */
+}
+
+/* @media screen and (max-width: 640px){
+  #logo{
+    width: 100%;
+    position: static;
+}
+
+nav {
+  width: 100%;
+  text-align: center;
+}
+
+.auth-image{
+  width: 100%;
+  margin: auto;
+  text-align: :center;
+}
+#mainname {
+  width: 100%;
+} 
+h1 {
+  text-align: center;
+} */
+
+/* -------------------- Phones --------------------- */
+
+@media screen and (max-width: 310px){
+    h1 {
+      text-align: center;
+      font-size: 18px}
+    .work h3 {
+    position: absolute;
+    bottom: 3px;
+    width: 100%;
+    padding: 1px;
+    color: #fff;
+    text-align: center;
+    background: #4aaaa5;
+    border-bottom: 0;
+    font-size: 12px
+    /* .sidebar{
+  float: left; */
+  }
+}
+
+/* ------------------- Wearables ------------------- 
+
+/* ----------- Moto 360 Watch ----------- 
+
+@media 
+  (max-device-width: 218px)
+  and (max-device-height: 281px) {
+}
+
+/* ----------- Apple Watch ----------- 
+
+@media
+  (max-device-width: 42mm)
+  and (min-device-width: 38mm) {
+}
+*/
